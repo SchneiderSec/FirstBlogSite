@@ -1,0 +1,19 @@
+<div class="container jumbotron" style="background-color: rgba(255, 255, 255, 0.77); width: 30%; padding: 10px;box-shadow: 0 2px 10px 2px rgb(29, 29, 29);border-radius: 10px">
+    <h3 class="display-5" style="text-align: center; font-size:4vw;" >{{ title }}</h1>
+</div>
+<div class="container jumbotron">
+    <h4 class="display-4" style="text-align: center; font-size:4vw;">Most recent post:</h2>
+    {{!-- <p class="textBox" style="color: rgba(104, 1, 1, 0.87);"></p> --}}
+    <div class="card">
+  <div class="card-body">
+    <img src="{{content.postImage}}" style="float: left; padding: 5px; margin-right: 10px; max-width: 15%;">
+    <h5 class="card-title">{{#if content.postTitle }}<a href="/blog/{{formatTitle content.postTitle}}">{{/if}}{{content.postTitle}}</a></h5>
+    <p class="card-text">{{content.postDesc}}</p>
+    {{#if content.postTitle }}<a href="/blog/{{formatTitle content.postTitle}}" class="btn btn-primary">View here...</a> {{/if}}
+  </div>
+   <div class="card-footer text-muted" style="padding-bottom: 5px">
+    Date posted: {{content.currentDate}}
+  </div>
+</div>
+<br>
+</div>

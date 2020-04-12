@@ -1,0 +1,133 @@
+.navbar-nav .nav-item .nav-link{
+    color: rgba(100, 0, 0, 0.75);
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: rgb(0, 0, 0);
+}
+li:hover{
+    text-decoration: underline;
+    transition-delay: 2s;
+}
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.947);
+}
+.mx-auto .navbar-brand{
+    color: rgb(2, 2, 2);
+}
+.mx-auto .navbar-brand:hover{
+    color: rgb(255, 0, 0);
+}
+
+.nav-link{
+    font-family: 'Kulim Park', sans-serif;
+}
+img {
+    max-width:13%;
+    margin-left: 2px;
+    height:auto;
+}
+.navbar-img{
+    margin-top: 5px;
+}
+.textBox{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.textDivCon{
+    padding: 20px;
+}
+.socials{
+    margin: auto;
+    width: 20%;
+    align-items: center;
+}
+.socials:hover{
+    color: red;
+}
+.linkedIn{
+    color: black;
+}
+.gitHub{
+    color: rgb(250, 176, 40);
+}
+.blogPosts{
+    background-color: rgb(73, 61, 61);
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 2px;
+}
+.blogImg{
+    max-width: 20%;
+    max-height: 50%;
+    float: left;
+    padding: 10px;
+    justify-content: space-between;
+}
+.notFound{
+    font-size: 80px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: center;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .btn-group{
+      display: none;
+  }
+  .container .jumbotron{
+    font-size:2vw;
+  }
+  .card-body{
+    width: 40%
+  }
+  .blogImg{
+    float: left; padding: 5px; margin-right: 10px; max-width: 15%;
+  }
+  @media (max-width: 700px) {
+    .navbar-nav     { display: none; }
+    .btn-group { display: inline-block; }
+    .container { font-size: 4vw;}
+    h2 {font-size: 5vw;}
+    .blogImg {max-width: 50%;}
+    .card-body {width: 100%; padding: 10px;}
+    .card-text {max-width: 100%;}
+  }
+  .hackerOne{
+      color: black;
+      font-size: 60px;
+      text-decoration: none;
+  }
+  .hackerOne:hover{
+    text-decoration: none;
+}
+  .linHash{
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

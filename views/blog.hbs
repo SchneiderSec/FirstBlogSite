@@ -1,0 +1,19 @@
+<br>
+{{#each blogs}}
+<div class="card bg-light" style="max-width: 100%; min-height: 10px;">
+  <div class="card-body">
+    <img class="blogImg" src="{{this.postImage}}">
+    <h5 class="card-title"><a href="/blog/{{formatTitle this.postTitle}}">{{this.postTitle}}</a></h5>
+    <p class="card-text">{{this.postDesc}}</p>
+    <a href="/blog/{{formatTitle this.postTitle}}" class="btn btn-primary">View here...</a>
+  </div>
+   <div class="card-footer text-muted" style="padding-bottom: 5px">
+    Date posted: {{this.currentDate}}
+  </div>
+</div>
+<br>
+{{/each}}
+
+
+
+
